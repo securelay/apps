@@ -4,6 +4,7 @@
     "title": "Formonit",
     "url": "https://formonit.github.io",
     "icon": "https://formonit.github.io/android-chrome-192x192.png",
-    "message": "You've a new message. Tap to open."
+    "message": "You've a new message. Tap to open.",
+    "data": false
   }
 }
