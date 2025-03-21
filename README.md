@@ -18,3 +18,8 @@ The JSON should contain the following keys, some of which are optional. Most tak
     - `message` : Message to be shown in the notification body
 
 See [formonit.json](./formonit.json) as an example.
+
+### Contact
+For any query, feel free to contact us.
+- Create an [issue](https://github.com/securelay/apps/issues)
+- Email us at [securelay.github.io@gmail.com](mailto:securelay.github.io@gmail.com)
