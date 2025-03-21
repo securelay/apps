@@ -9,12 +9,12 @@ To register your app, add `<your-app-name>.json` containing the necessary detail
 The JSON should contain the following keys, some of which are optional. Most take string-typed values.
 
 - `app` : Name of the app
-- `origin` : Optional. If provided, Securelay creates a web-push only if the triggering request matches this in its [Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Origin) header.
 - `webPush` : Specify the web-push notification
+    - `ifOrigin` : Optional. Comma-separated list if multiple origins. If provided, Securelay creates a web-push only if the triggering request matches one of the listed origins in its [Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Origin) header.
+    - `sendData` : Optional. Boolean. If provided and `true`, Securelay adds the triggering request's body to the web-push as [additional data](https://documentation.onesignal.com/reference/push-notification#custom-data--categories).
     - `title` : Notification header
     - `url` : Clicking the notification would open this link
     - `icon` : URL to app logo or icon
     - `message` : Message to be shown in the notification body
-    - `data` : Optional. Boolean. If provided and `true`, Securelay adds the triggering request's body to the web-push as additional data.
 
 See [formonit.json](./formonit.json) as an example.
